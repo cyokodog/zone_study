@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "build-by-babel": "babel demo --out-dir dest",
+    "build-webapp": "node build-browserify demo/03",
+    "build-webapp_": "browserify ./demo/03/index.js -t babelify -o ./demo/03/bundle.js",
+    "demo01": "node dest/01",
+    "demo02": "node dest/02"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babelify": "7.3.0",
+    "browserify": "14.3.0"
+  },
+  "dependencies": {
+    "zone.js": "github:angular/zone.js"
+  }
+}
